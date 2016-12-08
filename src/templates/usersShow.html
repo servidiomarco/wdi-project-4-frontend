@@ -1,0 +1,10 @@
+<section>
+  <ul class="row">
+    <li class="four columns">
+        <h6>Username: {{ usersShow.user.username }}</h6>
+        <h6>Email: {{ usersShow.user.email }}</h6>
+    </li>
+  </ul>
+  <a ng-if="usersShow.isLoggedIn()" ui-sref="usersEdit({ id: usersShow.user.id })" class="button">Edit</a>
+  <button ng-if="usersShow.isLoggedIn()" ng-click="usersShow.delete()">Delete</button>
+</section>

@@ -1,0 +1,22 @@
+<section class="row">
+  <form ng-submit="usersEdit.update()">
+    <div class="twelve columns">
+      <label>Username</label>
+      <input type="text" name="username" ng-model="usersEdit.user.username" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Email</label>
+      <input type="text" name="email" ng-model="usersEdit.user.email" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Password</label>
+      <input type="text" name="password" ng-model="usersEdit.user.password" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Password confirmation</label>
+      <input type="text" name="password_confirmation" ng-model="usersEdit.user.password_confirmation" class="u-full-width">
+    </div>
+
+    <button>Update</button>
+  </form>
+</section>
