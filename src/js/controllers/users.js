@@ -37,6 +37,18 @@ function UsersEditController(User, $state, $auth) {
       $state.go('usersShow',$state.params);
     });
   }
+
   usersEdit.update = update;
   usersEdit.isLoggedIn = $auth.isAuthenticated;
 }
+
+// offer controller
+// function joinOffer() {
+//   offersShow.offer.attendees.push(currentUserId);
+//   offersShow.offer.$update(() => {
+//     $state.go('offersShow',$state.params);
+//   });
+// }
+
+// the following as to go to OffersShowController 
+// const currentUserId = $auth.getPayload().id;
